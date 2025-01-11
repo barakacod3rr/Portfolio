@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Eann Baraka</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Eann Baraka</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Eann Baraka profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Eann Baraka</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <h4>Based in Nairobi, Kenya</h4>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/main-cv.pdf')"
+          >
+            Download CV
+          </button>
+          
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/eann-baraka-0992452bb/'"/>
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/barakacod3rr'"/>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Experienced in <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Diploma in Business and Information Technology <br> in Strathmore University<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a highly motivated and detail-oriented BBIT student finalist at Strathmore University, I'm passionate about crafting user-friendly and visually appealing web experiences. With a strong foundation in front-end technologies and a keen eye for design, I'm proficient in developing interactive and engaging web applications. I'm a fast learner, a strong team player, and possess excellent communication and problem-solving skills. I'm eager to contribute my skills and enthusiasm to dynamic projects that push the boundaries of web design and development. I also have a strong interest in data analytics!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!----------EXPERIENCE------------------>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+          <div class="experience-nav">
+            <button class="experience-link" onclick="showSection('skills')">Skills</button>
+            <button class="experience-link" onclick="showSection('projects')">Projects</button>
+          </div>
+          <div id="skills-section" class="experience-content">
+            <div class="skill-card">
+              <i class="fas fa-code"></i>
+              <h3>Frontend Development</h3>
+              <p>HTML, CSS, JavaScript, Git</p>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-server"></i>
+
+              <h3>Backend Development</h3>
+              <p>Node.js, SQL, MongoDB</p>
+            </div>
+          </div>
+          <div id="projects-section" class="experience-content hidden">
+            <div class="project-card">
+              <img src="./assets/bd-website.png" alt="Project 1" />
+              <h3>Blood Donation System</h3>
+              <h5>This blood donation system empowers patients by letting them choose their preferred hospital. A central administrator manages the system, granting access to hospital administrators who then schedule appointments with patients and donors.</h5>
+              <hr>
+              <h5>Languages used: HTML, CSS, Bootstrap, Javascript PHP and SQL</h5>
+              <a href="https://github.com/barakacod3rr/Blood-Donation-System/tree/master" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+              <img src="./assets/maze-game.png" alt="Project 2" />
+              <h3>Maze Explorer Game</h3>
+              <h5>This fast-paced maze explorer game challenges players to navigate a maze within a 60-second time limit to reach the destination. Players must evade a relentless enemy that relentlessly pursues them, forcing them to restart the level upon contact.</h5>
+              <hr>
+              <h5>Languages Used: C#</h5>
+              <a href="https://github.com/barakacod3rr/MazeExplorer" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+              <img src="./assets/cat-website.png" alt="Project 3" />
+              <h3>Create A Tee Website</h3>
+              <h5>CreateATee is a Kenyan based garment printing company that focuses on printing clothing. The website simplifies product discovery by allowing users to compare prices from different catalogs and easily place orders.</h5>
+              <hr>
+               <h5>Languages Used: HTML, Bootstrap and CSS</h5>
+              <a href="https://createatee.co.ke/" target="_blank">View Website</a>
+            </div>
+          </div>
+        </section>
+        
+        <script>
+          function showSection(section) {
+            const skillsSection = document.getElementById("skills-section");
+            const projectsSection = document.getElementById("projects-section");
+            if (section === "skills") {
+              skillsSection.classList.remove("hidden");
+              projectsSection.classList.add("hidden");
+            } else if (section === "projects") {
+              skillsSection.classList.add("hidden");
+              projectsSection.classList.remove("hidden");
+            }
+          }
+        </script>
+        
+      
+   
+  </body>
+</html>
